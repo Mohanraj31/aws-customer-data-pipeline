@@ -1,11 +1,31 @@
-# Dataset - do not commit customer data
-data/*.csv
-
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Virtual environments
 .venv/
 venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# AWS / local configuration
+.aws/
+*.log
+
+# Spark / Hadoop local files
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Data files
+data/*.csv
+data/*.parquet
 
 # IDE
 .vscode/
@@ -14,11 +34,3 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
-
-# AWS / credentials
-.aws/
-*.pem
-
-# Environment / secrets
-.env
-*.env
